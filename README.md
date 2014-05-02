@@ -7,9 +7,11 @@ distutils/setuptools.
 Usage
 =====
 
-Add `django-deploy` into your requirement.
+1. Install `django-deploy` and add it into your requirements.
 
-Next step depends whether your project uses `setup.py` or not:
+2. Add `django_deploy` to your INSTALLED_APPS.
+
+3. Next step depends whether your project uses `setup.py` or not:
 
 With ``setup.py``
 -----------------
@@ -49,3 +51,9 @@ Without ``setup.py``
 
 Simply call `manage.py deploy` after updating codebase and
 installing requirements.
+
+
+Licence
+=======
+
+MIT
