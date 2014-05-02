@@ -21,5 +21,4 @@ if settings.USE_I18N:
         Task('compilemessages'),
     ])
 
-task_list = getattr(settings, 'DEPLOY_COMMANDS', default_tasks)
-tasks = deploy_tasks(*task_list)
+tasks = deploy_tasks(*default_tasks)
