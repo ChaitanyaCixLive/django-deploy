@@ -27,20 +27,21 @@ setup(
 
 `DjangoInstall` will call `deploy` management command after regular install.
 
+### Problem with `install_requires`
 
-*Please note* this approach has one major flaw. In case you specify your
+**Please note** this approach has one major flaw. In case you specify your
 project requirements using `install_requires` keyword, you won't be able to
 import `django_deploy` module during initial install.
 
 One possible solution is add following import statement and install
-application twice. Updates will work just fine.
+application twice. Updates will work just fine:
 
-``python
+```python
 try:
     from django_deploy.setup import DjangoInstall as install
 except ImportError:
     from distutils.command.install import install
-``
+```
 
 
 Without ``setup.py``
