@@ -5,7 +5,7 @@ from setuptools import setup, find_packages
 from django_deploy import __version__
 
 setup(
-    name='django_deploy',
+    name='django-deploy-setup',
     version=__version__,
     license='MIT',
 

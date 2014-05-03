@@ -29,7 +29,7 @@ left to other provisioning/deployment tools like Fabric, Salt or Ansible.
 Usage
 =====
 
-1. Install `django-deploy` and add it into your requirements.
+1. Install `django-deploy-setup` and add it into your requirements.
 
 2. Add `django_deploy` to your INSTALLED_APPS.
 
