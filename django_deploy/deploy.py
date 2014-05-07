@@ -16,9 +16,6 @@ if 'staticfiles' in settings.INSTALLED_APPS and settings.STATIC_ROOT:
     default_tasks.append(Task('collectstatic', interactive=False))
 
 if settings.USE_I18N:
-    default_tasks.extend([
-        Task('makemessages', all=True),
-        Task('compilemessages'),
-    ])
+    default_tasks.append(Task('compilemessages'))
 
 tasks = deploy_tasks(*default_tasks)
